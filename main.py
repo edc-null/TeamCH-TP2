@@ -23,4 +23,3 @@ def main():
 # lorsque ce fichier est lancé directement
 if __name__ == "__main__":
     main()
-
