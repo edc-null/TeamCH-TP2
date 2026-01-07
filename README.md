@@ -164,7 +164,7 @@ Si un champ est invalide :
 <img src="README images/3.png" alt="" width="422" height="312">
 <img src="README images/33.png" alt="" width="422" height="312">
 <img src="README images/4.png" alt="" width="422" height="312">
-<img src="README images/5.png" alt="" width="580" height="312">
+<img src="README images/5.png" alt="" width="802" height="482">
 
 
 <h3>Modification d’un contact</h3>
@@ -173,12 +173,12 @@ L'utilisateur doit sélectionner le contact à modifier.
 Ensuite, les données existantes sont préchargées dans le formulaire.
 Après validation, les modifications sont enregistrées en base de données.
 </p>
-<img src="README images/6.png" alt="" width="580" height="312">
+<img src="README images/6.png" alt="" width="802" height="482">
 <img src="README images/7.png" alt="" width="422" height="312">
 <img src="README images/8.png" alt="" width="422" height="312">
 <img src="README images/9.png" alt="" width="422" height="312">
 <img src="README images/10.png" alt="" width="422" height="312">
-<img src="README images/100.png" alt="" width="580" height="312">
+<img src="README images/100.png" alt="" width="802" height="482">
 
 
 
@@ -202,18 +202,8 @@ Bouton menant à une page web rédigée en html et css. Cette page présente un 
 <img src="README images/28.png" alt="" width="400" height="300">
 <hr>
 
-
-<h2>Conclusion</h2>
 <p>
-Ce projet met en œuvre une architecture claire et maintenable,
-séparant l’interface graphique, la logique métier, la validation et l’accès aux données.
-La validation robuste des entrées utilisateur permet d’éviter les erreurs
-de saisie et d’améliorer l’expérience utilisateur.
-
-
-
 Projet réalisé par Eric De Celles, Valérie Ouellet et William Bourbonnière dans dans le cadre du cours 420-2PR-BB Programmation orientée objet. Collège Bois-de-Boulogne 15/01/2026
-
 </p>
 
 </body>
