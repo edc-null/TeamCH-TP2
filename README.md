@@ -30,13 +30,12 @@ via une couche d’accès dédiée qui isole la logique SQL du reste de l’appl
 
 <p>
 Le projet intègre également une <strong>page web statique en HTML et CSS</strong>,
-accessible depuis l’interface graphique, notamment pour la section
-<strong>« Aide et à propos de »</strong>. 
+accessible depuis la section « Aide et à propos de » de l’interface graphique. 
 </p>
 
 <p>
 <strong>Concepts utilisés :</strong><br>
-encapsulation, séparation des responsabilités, validation centralisée des données,
+Encapsulation, séparation des responsabilités, validation centralisée des données,
 programmation orientée objet.
 </p>
 
