@@ -3,7 +3,7 @@ from PyQt6.QtCore import Qt
 
 from db.database import Database
 from models.contact import Contact
-
+from catch.input_errors import Catch
 
 class AddContactWindow(QWidget):
     def __init__(self, contact_data=None, on_save_callback=None):
@@ -93,26 +93,41 @@ class AddContactWindow(QWidget):
 
     # Sauvegarde (AJOUT ou MODIFICATION)
     def save_contact(self):
-        fields = [self.input_nom, self.input_prenom, self.input_telephone, self.input_email]
+        # Récupération des valeurs
+        nom = self.input_nom.text()
+        prenom = self.input_prenom.text()
+        telephone = self.input_telephone.text()
+        email = self.input_email.text()
+
+        field_map = {
+            "nom": [self.input_nom],
+            "prenom": [self.input_prenom],
+            "telephone": [self.input_telephone],
+            "email": [self.input_email]
+        }
 
         # Réinitialise le style de tous les champs du formulaire
         # Cela permet de supprimer les bordures rouges ajoutées
         # lors d'une validation précédente
-        for field in fields:
-            field.setStyleSheet("")
+        for widgets in field_map.values():
+            for widget in widgets:
+                widget.setStyleSheet("")
 
-        # Validation visuelle
-        for field in fields:
-            if not field.text().strip():
-                field.setStyleSheet("border: 2px solid red;")
-                QMessageBox.warning(
-                    self,
-                    "Erreur",
-                    "Veuillez remplir tous les champs obligatoires."
-                )
-                return
+        # Validation des input par catch
+        is_valid, field, message = Catch.validate_contact(
+            nom, prenom, telephone, email
+        )
 
-        contact = Contact(nom=self.input_nom.text(), prenom=self.input_prenom.text(), telephone=self.input_telephone.text(), email=self.input_email.text())
+        if not is_valid:
+            for widget in field_map[field]:
+                widget.setStyleSheet("border: 2px solid red;")
+                widget.setFocus()  # Place le curseur sur le champ invalide
+
+            QMessageBox.warning(self, "Erreur de validation", message)
+            return
+
+        # Création de l'objet Contact
+        contact = Contact(nom=nom, prenom=prenom, telephone=telephone, email=email)
         db = Database()
 
         # Si des données de contact existent, cela signifie que l'utilisateur modifie un contact déjà présent dans la base de données
