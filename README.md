@@ -18,8 +18,8 @@ avec <strong>PyQt6</strong> et d’une base de données <strong>SQLite</strong>.
 <p>
 L’application offre à l’utilisateur la possibilité d’ajouter, de modifier, de supprimer
 et de valider des contacts comprenant un nom, un prénom, un numéro de téléphone et
-une adresse courriel. Les données saisies font l’objet d’une validation rigoureuse,
-effectuée à la fois en temps réel et lors de l’enregistrement, afin de garantir
+une adresse courriel. Les données saisies font l’objet d’une validation rigoureuse
+effectuée lors de l’enregistrement afin de garantir
 l’intégrité et la cohérence des informations stockées.
 </p>
 
@@ -30,13 +30,12 @@ via une couche d’accès dédiée qui isole la logique SQL du reste de l’appl
 
 <p>
 Le projet intègre également une <strong>page web statique en HTML et CSS</strong>,
-accessible depuis l’interface graphique, notamment pour la section
-<strong>« Aide et à propos de »</strong>. 
+accessible depuis la section « Aide et à propos de » de l’interface graphique. 
 </p>
 
 <p>
 <strong>Concepts utilisés :</strong><br>
-encapsulation, séparation des responsabilités, validation centralisée des données,
+Encapsulation, séparation des responsabilités, validation centralisée des données,
 programmation orientée objet.
 </p>
 
