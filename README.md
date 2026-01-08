@@ -2,11 +2,10 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Projet – Gestion de contacts</title>
 </head>
 <body>
 
-<h1>Projet 1 – Gestion de contacts</h1>
+<h1>Le carnet du futur – Gestion de contacts</h1>
 
 <h2>Description</h2>
 <p>
@@ -197,8 +196,8 @@ Ensuite, les données existantes sont supprimées et les modifications sont enre
 Bouton menant à une page web rédigée en html et css. Cette page présente un l'informaiton sur l'application et sur les développeurs.
 </p>
 <img src="README images/26.png" alt="" width="802" height="482">
-<img src="README images/27.png" alt="" width="400" height="300">
-<img src="README images/28.png" alt="" width="400" height="300">
+<img src="README images/27.png" alt="" width="733" height="540">
+<img src="README images/28.png" alt="" width="737" height="701">
 <hr>
 
 <p>
